@@ -1,0 +1,26 @@
+{
+  "name": "user-management-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MOEHM/CodeCraftHub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MOEHM/CodeCraftHub/issues"
+  },
+  "homepage": "https://github.com/MOEHM/CodeCraftHub#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "supertest": "^7.0.0",
+    "winston": "^3.13.1"
+  }
+}
