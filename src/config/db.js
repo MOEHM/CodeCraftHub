@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const User = require('../models/userModel');
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb://root:MjM4OS1tb2hhbW1l@localhost:27017');
+    await mongoose.connect('mongodb://root:Mjg0MjUtbW9oYW1t@localhost:27017');
     console.log('MongoDB connected');
   } catch (error) {
     console.error('MongoDB connection error:', error);
