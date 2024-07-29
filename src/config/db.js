@@ -1,15 +1,12 @@
 const mongoose = require('mongoose');
-
-const connect = (callback) => {
-  mongoose.connect('mongodb://localhost:27017/myapp', { useNewUrlParser: true, useUnifiedTopology: true });
-  const db = mongoose.connection;
-  db.on('error', console.error.bind(console, 'connection error:'));
-  db.once('open', () => {
-    console.log('Connected to MongoDB');
-    callback();
-  });
+const User = require('../models/userModel');
+const connectDB = async () => {
+  try {
+    await mongoose.connect('mongodb://root:MjM4OS1tb2hhbW1l@localhost:27017');
+    console.log('MongoDB connected');
+  } catch (error) {
+    console.error('MongoDB connection error:', error);
+    process.exit(1);
+  }
 };
-
-module.exports = {
-  connect
-};
+module.exports = connectDB;
